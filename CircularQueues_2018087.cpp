@@ -35,7 +35,11 @@ public:
         queue_array[REAR] = num;
     }
     void remove() {
-
+        //cek antrian kosong
+        if (FRONT == -1) {
+            cout << "Queue underflow\n";
+            return;
+        }
     }
 };
 
