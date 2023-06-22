@@ -13,6 +13,13 @@ public:
     }
     void insert() {
         int num; 
+        cout << "Enter a number : ";
+        cin >> num;
+        cout << endl;
+        //Cek apakah antrian penuh
+        if((FRONT))
+
+
     }
 };
 
