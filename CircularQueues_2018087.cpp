@@ -132,6 +132,6 @@ int main()
             cout << "Check for the values entered." << endl;
         }
     }
-    
+    return 0;
 }
 
