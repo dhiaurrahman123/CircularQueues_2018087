@@ -54,7 +54,7 @@ public:
                 FRONT = FRONT + 1;
         }
     }
-    void displa() {
+    void display() {
         int FRONT_position = FRONT;
         int REAR_position = REAR;
 
@@ -113,6 +113,10 @@ int main()
                 }
             case '2': {
                 q.remove();
+                break;
+                }
+            case'3': {
+                q.display();
                 break;
                 }
             }
