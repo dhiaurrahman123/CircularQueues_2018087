@@ -1,7 +1,8 @@
 
 
 #include <iostream>
-usi
+using namespace std;
+
 
 int main()
 {
