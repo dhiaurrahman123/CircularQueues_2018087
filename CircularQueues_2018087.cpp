@@ -101,8 +101,18 @@ int main()
             cout << "2. Implement delete operation" << endl;
             cout << "3. Display values" << endl;
             cout << "4. Exit" << endl;
-            cout << "Enter your choice (1-4)":  << endl;
+            cout << "Enter your choice (1-4): "  << endl;
             cin >> ch;
+            cout << endl;
+            
+            switch (ch)
+            {
+            case '1': {
+                q.insert();
+                break;
+                }
+            }
+            
 
         }
     }
