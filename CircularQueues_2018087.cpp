@@ -56,7 +56,7 @@ public:
     }
     void displa() {
         int FRONT_position = FRONT;
-        int rear_position = REAR;
+        int REAR_position = REAR;
 
         //cek apakah antrian kosong
         if (FRONT == -1) {
@@ -64,6 +64,28 @@ public:
             return;
         }
         cout << "\nElementss in the queue are : \n";
+        //jika front_position<=rear_position,iterasi dari Front hingga REAR
+        if (FRONT_position <= REAR_position) {
+            while (FRONT_position <= REAR_position) {
+                cout << queue_array[FRONT_position] << "    ";
+                FRONT_position++;
+                cout << endl;
+            }
+        }
+        else {
+            //jika  front_position<=rear_position,iterasi dari Front hingga akhir array
+            while (FRONT_position <= max - 1) {
+                cout << queue_array[FRONT_position] << "   ";
+                FRONT_position++;
+            }
+            FRONT_position = 0;
+            //iterasi dari awal array hingga rear
+            while (FRONT_position <= REAR_position) {
+                cout << queue_array[FRONT_position] << "      ";
+                FRONT_position++;
+            }
+            cout << endl;
+        }
     }
 };
 
