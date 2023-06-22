@@ -123,11 +123,13 @@ int main()
                 return 0;
                 }
             default: {
-                cout<<
+                cout << "Invalid Opntion!!" << endl;
+                break;
+                }
             }
-            }
-
-
+        }
+        catch (exception& e) {
+            cout << "Check for the values entered." << endl;
         }
     }
     
